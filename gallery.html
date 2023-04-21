@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelingTiffin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      /* styles for the header */
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      header p {
+        margin: 0;
+        font-size: 18px;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px; /* adjust as needed */
+        margin: 0 auto;
+      }
+
+      .gallery-container img {
+        width: calc(25% - 10px); /* adjust as needed */
+        margin-bottom: 20px;
+      }
+
+      @media screen and (max-width: 992px) {
+        .gallery-container img {
+          width: calc(33.33% - 10px);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .gallery-container img {
+          width: calc(50% - 10px);
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .gallery-container img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <a href="index.html" class="logo">TravelingTiffin<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="index.html#menu" onclick="toggleMenu()">Menu</a></li>
+          <li><a href="index.html#expert" onclick="toggleMenu()">Expert</a></li>
+          <li><a href="index.html#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+          <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+
+    <h1 class="gallery-title"><a href="index.html">Home</a></h1>
+
+    <div class="gallery-container">
+      <img src="img/image1.jpg" alt="Sunset over the ocean" />
+      <img src="img/image2.jpg" alt="Mountain landscape" />
+      <img src="img/image3.jpg" alt="City skyline" />
+      <img src="img/image4.jpg" alt="Flower garden" />
+      <img src="img/image5.jpg" alt="Desert landscape" />
+      <img src="img/image6.jpg" alt="Forest trail" />
+      <img src="img/image7.jpg" alt="Lake reflection" />
+      <img src="img/image8.jpg" alt="Snowy mountain" />
+      <img src="img/image9.jpg" alt="Waterfall" />
+      <img src="img/image10.jpg" alt="Night sky" />
+      <img src="img/image11.jpg" alt="Beach sunset" />
+      <img src="img/image12.jpg" alt="Autumn leaves" />
+      <img src="img/image13.jpg" alt="Rainbow over the hills" />
+      <img src="img/image14.jpg" alt="Bridge over river" />
+      <img src="img/image15.jpg" alt="Sunflower field" />
+      <!-- add more images as needed -->
+    </div>
+
+    <!-- add any additional content or features here -->
+  </body>
+</html>
